@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>xPoster Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #fbfaf7;
+        --ink: #201f1b;
+        --muted: #6b665e;
+        --line: #d8d2c6;
+        --signal: #2f6f68;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font: 16px/1.65 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        letter-spacing: 0;
+      }
+
+      main {
+        width: min(840px, calc(100vw - 36px));
+        margin: 0 auto;
+        padding: 56px 0 72px;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 28px;
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(32px, 5vw, 54px);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 34px 0 10px;
+        color: var(--signal);
+        font-size: 20px;
+        line-height: 1.2;
+      }
+
+      p,
+      ul {
+        margin: 0 0 16px;
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      a {
+        color: var(--signal);
+      }
+
+      .date {
+        color: var(--muted);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>xPoster Privacy Policy</h1>
+        <p class="date">Effective date: May 20, 2026</p>
+      </header>
+
+      <p>
+        xPoster is a Chrome extension for importing user-provided Markdown drafts into X Articles. The extension runs
+        in the browser and is designed to help users preview, validate, and publish structured article content from a
+        side panel.
+      </p>
+
+      <h2>Data xPoster Handles</h2>
+      <p>xPoster may handle the following data when the user chooses to use the extension:</p>
+      <ul>
+        <li>User-provided Markdown drafts, including text, links, tables, tweet URLs, code blocks, and image references.</li>
+        <li>The active X or Twitter tab URL, page title, article route, editor readiness, and article identifier needed to confirm the import target.</li>
+        <li>Local folder handles selected by the user for resolving relative image paths in Markdown drafts.</li>
+        <li>Remote image URLs included by the user in Markdown drafts, when those images need to be fetched for import.</li>
+        <li>Import diagnostics and evidence generated locally in the side panel, such as block counts, readiness checks, and import results.</li>
+      </ul>
+
+      <h2>How Data Is Used</h2>
+      <p>
+        xPoster uses this data only to provide its single purpose: importing Markdown drafts into the active X Article
+        editor and verifying the publishing workflow.
+      </p>
+      <p>
+        The extension parses Markdown locally, prepares images and tables locally, communicates with the active X
+        Article tab, and uses X page APIs only for user-requested article actions such as setting article title or cover
+        media. xPoster does not operate a backend service and does not send user content to any xPoster-owned server.
+      </p>
+      <p>
+        xPoster's use of user data complies with the Chrome Web Store User Data Policy, including the Limited Use
+        requirements. xPoster uses user data only to provide or improve its single purpose, does not transfer user data
+        except as necessary for the user-requested publishing workflow, does not use user data for advertising, and does
+        not allow humans to read user data.
+      </p>
+
+      <h2>Storage</h2>
+      <p>xPoster may store the following data locally in the user's browser:</p>
+      <ul>
+        <li>The current side panel draft in Chrome extension storage.</li>
+        <li>Live verification checklist state in Chrome extension storage.</li>
+        <li>A user-selected local image vault folder handle in IndexedDB, when the user chooses a folder for relative images.</li>
+      </ul>
+      <p>This local data stays on the user's device unless the user independently publishes content through X.</p>
+
+      <h2>Network Requests</h2>
+      <p>xPoster makes network requests only as needed for its publishing workflow:</p>
+      <ul>
+        <li>Requests to x.com, twitter.com, and related X media endpoints are used to interact with the active X Article editor under the user's logged-in X session.</li>
+        <li>Requests to remote image URLs are made only when those URLs are present in user-provided Markdown content and are needed for import.</li>
+      </ul>
+      <p>xPoster does not use analytics, advertising SDKs, tracking pixels, payment services, or third-party telemetry.</p>
+
+      <h2>Data Sharing</h2>
+      <p>
+        xPoster does not sell, rent, transfer, or share user data with third parties. Data is not used for advertising,
+        creditworthiness, or any purpose unrelated to the extension's publishing workflow.
+      </p>
+      <p>
+        When the user imports or publishes content into X Articles, that content is handled by X according to X's own
+        terms and privacy practices. xPoster does not control X's processing of content after the user sends it to X.
+      </p>
+
+      <h2>Authentication Information</h2>
+      <p>
+        xPoster does not collect, store, or transmit passwords or X authentication tokens to xPoster-owned systems.
+        Browser cookies for X may be included by Chrome in same-site requests to X when the user performs an X Article
+        action, but xPoster does not store those cookies.
+      </p>
+
+      <h2>Remote Code</h2>
+      <p>xPoster does not load or execute remote JavaScript. Extension code is packaged with the submitted Chrome extension.</p>
+
+      <h2>User Control</h2>
+      <p>
+        Users can clear locally stored extension data through Chrome's extension storage controls or by removing the
+        extension. Users can also clear the local image vault setting from the xPoster side panel.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, open an issue at
+        <a href="https://github.com/nevertoday/xposter-privacy/issues">github.com/nevertoday/xposter-privacy/issues</a>.
+      </p>
+    </main>
+  </body>
+</html>
