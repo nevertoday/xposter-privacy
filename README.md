@@ -12,7 +12,7 @@ xPoster may handle the following data when the user chooses to use the extension
 - The active X or Twitter tab URL, page title, article route, editor readiness, and article identifier needed to confirm the import target.
 - Local folder handles selected by the user for resolving relative image paths in Markdown drafts.
 - Remote image URLs included by the user in Markdown drafts, when the user grants optional access to those image origins for import.
-- Import diagnostics and evidence generated locally in the side panel, such as block counts, readiness checks, and import results.
+- Import readiness checks and saved run records generated locally in the side panel, such as block counts, readiness checks, and import results.
 
 ## How Data Is Used
 
@@ -28,7 +28,7 @@ xPoster may store the following data locally in the user's browser:
 
 - The current side panel draft in Chrome extension storage.
 - Live verification checklist state in Chrome extension storage.
-- A user-selected local image vault folder handle in IndexedDB, when the user chooses a folder for relative images.
+- A user-selected local image folder handle in IndexedDB, when the user chooses a folder for relative images.
 
 This local data stays on the user's device unless the user independently publishes content through X.
 
@@ -57,7 +57,7 @@ xPoster does not load or execute remote JavaScript. Extension code is packaged w
 
 ## User Control
 
-Users can clear locally stored extension data through Chrome's extension storage controls or by removing the extension. Users can also clear the local image vault setting from the xPoster side panel.
+Users can clear locally stored extension data through Chrome's extension storage controls or by removing the extension. Users can also clear the local image folder setting from the xPoster side panel.
 
 ## Contact
 
