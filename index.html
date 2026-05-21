@@ -75,7 +75,7 @@
     <main>
       <header>
         <h1>xPoster Privacy Policy</h1>
-        <p class="date">Effective date: May 20, 2026</p>
+        <p class="date">Effective date: May 21, 2026</p>
       </header>
 
       <p>
@@ -90,7 +90,7 @@
         <li>User-provided Markdown drafts, including text, links, tables, tweet URLs, code blocks, and image references.</li>
         <li>The active X or Twitter tab URL, page title, article route, editor readiness, and article identifier needed to confirm the import target.</li>
         <li>Local folder handles selected by the user for resolving relative image paths in Markdown drafts.</li>
-        <li>Remote image URLs included by the user in Markdown drafts, when those images need to be fetched for import.</li>
+        <li>Remote image URLs included by the user in Markdown drafts, when the user grants optional access to those image origins for import.</li>
         <li>Import diagnostics and evidence generated locally in the side panel, such as block counts, readiness checks, and import results.</li>
       </ul>
 
@@ -124,7 +124,7 @@
       <p>xPoster makes network requests only as needed for its publishing workflow:</p>
       <ul>
         <li>Requests to x.com, twitter.com, and related X media endpoints are used to interact with the active X Article editor under the user's logged-in X session.</li>
-        <li>Requests to remote image URLs are made only when those URLs are present in user-provided Markdown content and are needed for import.</li>
+        <li>Requests to remote image URLs are made only when those URLs are present in user-provided Markdown content, the user starts the import workflow, and the user grants the optional host permission for those image origins. Remote image requests omit credentials.</li>
       </ul>
       <p>xPoster does not use analytics, advertising SDKs, tracking pixels, payment services, or third-party telemetry.</p>
 

@@ -1,6 +1,6 @@
 # xPoster Privacy Policy
 
-Effective date: May 20, 2026
+Effective date: May 21, 2026
 
 xPoster is a Chrome extension for importing user-provided Markdown drafts into X Articles. The extension runs in the browser and is designed to help users preview, validate, and publish structured article content from a side panel.
 
@@ -11,7 +11,7 @@ xPoster may handle the following data when the user chooses to use the extension
 - User-provided Markdown drafts, including text, links, tables, tweet URLs, code blocks, and image references.
 - The active X or Twitter tab URL, page title, article route, editor readiness, and article identifier needed to confirm the import target.
 - Local folder handles selected by the user for resolving relative image paths in Markdown drafts.
-- Remote image URLs included by the user in Markdown drafts, when those images need to be fetched for import.
+- Remote image URLs included by the user in Markdown drafts, when the user grants optional access to those image origins for import.
 - Import diagnostics and evidence generated locally in the side panel, such as block counts, readiness checks, and import results.
 
 ## How Data Is Used
@@ -37,7 +37,7 @@ This local data stays on the user's device unless the user independently publish
 xPoster makes network requests only as needed for its publishing workflow:
 
 - Requests to `x.com`, `twitter.com`, and related X media endpoints are used to interact with the active X Article editor under the user's logged-in X session.
-- Requests to remote image URLs are made only when those URLs are present in user-provided Markdown content and are needed for import.
+- Requests to remote image URLs are made only when those URLs are present in user-provided Markdown content, the user starts the import workflow, and the user grants the optional host permission for those image origins. Remote image requests omit credentials.
 
 xPoster does not use analytics, advertising SDKs, tracking pixels, payment services, or third-party telemetry.
 
